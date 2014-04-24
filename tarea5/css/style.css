@@ -1,0 +1,38 @@
+.grid tr:nth-child(odd)  { background-color:#eee; }
+.grid tr:nth-child(even) { background-color:#fff; }
+
+.grid {
+    font-family: sansans-serif;
+    font-size: 16px;
+}
+.grid tr:hover {
+	background-color:#f2e8da;
+ } 
+.grid td.id_pelicula {
+    width: 30px;
+    text-align: center;
+}
+.grid td.titulo {
+    width: 170px;
+    text-align: left;
+}
+.grid td.genero {
+    width: 50px;
+    text-align: left;
+}
+.grid td.duracion {
+    width: 30px;
+    text-align: center;
+ }
+.grid td.puntuacion{
+    width: 30px;
+    text-align: center;
+}
+.grid td.disponible{
+    width: 20px;
+    text-align: center;
+}
+.grid td.clasificacion{
+    width: 20px;
+    text-align: center;
+}

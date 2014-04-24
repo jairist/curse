@@ -1,0 +1,21 @@
+.grid tr:nth-child(odd)  { background-color:#eee; }
+.grid tr:nth-child(even) { background-color:#fff; }
+
+.grid {
+    font-family: arial;
+    font-size: 12px;
+}
+
+.grid tr:hover {
+	background-color:#f2e8da;
+ }
+ 
+ .grid td.dept_no {
+    width: 45px;
+    text-align: center;
+ }
+ 
+ .grid td.dept_nombre {
+    width: 170px;
+    text-align: left;
+ }

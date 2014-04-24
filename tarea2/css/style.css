@@ -1,0 +1,75 @@
+p{
+    margin: 6px 12px;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family:verdana, arial, helvetica, sans-serif;
+}
+#container{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    border: solid 1px black;
+    text-align: left;
+    background:#dcdcdc;
+}
+#pagehead{
+    background-color: gray;
+    padding: 5px;
+}
+#main{
+    float:left;
+    margin: 0 10px;
+    padding: 0 10px;
+    border:solid 2px #708090;
+    background:#dcdcdc;
+    margin:15px auto;
+    
+}
+#links{
+    width: auto;
+    float: right;
+    background: #EEE;
+    margin:15px auto;
+    padding: 2px;
+    text-align: justify;
+}
+#footer{
+    clear: both;
+    padding: 5px;
+    background: gray;
+    display: block;
+    text-align: center;
+}
+#tablaConfirmacion{
+    border:solid 0px;
+    border-bottom: solid;
+    border-top: solid;
+    width: 99%;
+}
+#tablaConfirmacion th{
+    background-color: white;
+    color: black;
+}
+#tablaConfirmacion tr{
+    background-color: white;
+    color: gray;
+}
+#tabla_empl_listado{
+    border:solid 0px;
+    border-bottom: solid;
+    border-top: solid;
+    width: 99%;
+}
+#tabla_empl_listado th{
+    background-color: white;
+    color: black;
+}
+#tabla_empl_listado tr{
+    background-color: white;
+    color: gray;
+}
