@@ -1,4 +1,5 @@
 <?php
+    include("includes/header.php");
     include_once("includes/PHPPaging.lib.php");
     include("includes/dbconn.php");
     $paging = new PHPPaging;
@@ -79,4 +80,5 @@
     echo "</table>";
     echo "Páginas ".$paging->fetchNavegacion();
     include("includes/dbdisc.php");
+    include("includes/footer.php");
 ?>
