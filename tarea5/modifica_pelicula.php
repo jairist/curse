@@ -1,14 +1,5 @@
-<html>
-<head>
-    <title>Modifica Departamento</title>
-    <script type="text/javascript">
-        function atras() {
-            window.location="lista_peliculas.php";
-        }
-    </script>
-</head>
-
 <?php
+    include("includes/header.php");
     include("includes/dbconn.php");
     $id_pelicula = $_GET['id_pelicula'];
        
@@ -67,7 +58,7 @@
             <tr>
                 <td>Clasificación</td>
                 <td>   
-                    <input type="radio" name="clasificacion" value="G"/>G
+                    <input type="radio" name="clasificacion" value="G" checked="true"/>G
                     <input type="radio" name="clasificacion" value="PG"/>PG
                     <input type="radio" name="clasificacion" value="PG-13"/>PG-13
                     <input type="radio" name="clasificacion" value="R"/>R
@@ -81,5 +72,7 @@
         </table>
             
     </form>
-</body>
-</html>
+ <?php  
+         include("includes/dbdisc.php");
+         include("includes/footer.php");
+    ?>
