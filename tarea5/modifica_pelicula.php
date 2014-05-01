@@ -18,17 +18,17 @@
 <h3>Modifica Pelicula</h3>
 
 <body>
-<form action="modificar_pelicula.php" method="post">
+<form action="modificar_pelicula.php" method="post" onsubmit="return validacion();">
     <input type="hidden" name="id_pelicula" <?php echo "value=\"$id_pelicula\""; ?> />
         <table>
             <tr>
                 <td>Título</td>
-                <td><input type="text" size="30" name="titulo" <?php echo "value=\"$titulo\""; ?> /></td>
+                <td><input id="titulo" type="text" size="30" name="titulo" <?php echo "value=\"$titulo\""; ?> /></td>
             </tr>
             <tr>
                 <td>Género</td>
                 <td>
-                    <select name="genero">
+                    <select id="genero" name="genero">
                         <option id="00" value="0">Selecione Género..</option>
                         <option id="01" value="Accion">Accion</option>
                         <option id="02" value="Drama">Drama</option>
@@ -42,27 +42,27 @@
             </tr>
             <tr>
                 <td>Duración</td>
-                <td><input type="text" size="30" name="duracion" <?php echo "value=\"$duracion\""; ?>/></td>
+                <td><input id="duracion" type="text" size="30" name="duracion" <?php echo "value=\"$duracion\""; ?>/></td>
             </tr>
             <tr>
                 <td>puntuacion</td>
-                <td><input type="text" size="30" name="puntuacion" <?php echo "value=\"$puntuacion\""; ?>/></td>
+                <td><input id="puntuacion" type="text" size="30" name="puntuacion" <?php echo "value=\"$puntuacion\""; ?>/></td>
             </tr>
             <tr>
                 <td>Disponible</td>
                 <td>
-                    <input type="checkbox" name="disponibilidad" value="1" checked="true"/>Si
-                    <input type="checkbox" name="disponibilidad" value="0"/>No
+                    <input id="disponible" type="checkbox" name="disponibilidad" value="1" checked="true"/>Si
+                    <input id="disponible" type="checkbox" name="disponibilidad" value="0"/>No
                 </td>
             </tr>
             <tr>
                 <td>Clasificación</td>
                 <td>   
-                    <input type="radio" name="clasificacion" value="G" checked="true"/>G
-                    <input type="radio" name="clasificacion" value="PG"/>PG
-                    <input type="radio" name="clasificacion" value="PG-13"/>PG-13
-                    <input type="radio" name="clasificacion" value="R"/>R
-                    <input type="radio" name="clasificacion" value="NC-17"/>NC-17
+                    <input id="clasificacion" type="radio" name="clasificacion" value="G" checked="true"/>G
+                    <input id="clasificacion" type="radio" name="clasificacion" value="PG"/>PG
+                    <input id="clasificacion" type="radio" name="clasificacion" value="PG-13"/>PG-13
+                    <input id="clasificacion" type="radio" name="clasificacion" value="R"/>R
+                    <input id="clasificacion" type="radio" name="clasificacion" value="NC-17"/>NC-17
                 </td>
             </tr>
             <tr>
