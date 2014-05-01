@@ -1,8 +1,12 @@
 -- Objetos
--- Store Procedure para agregar una nueva pelicula 
+USE tarea5;
+
 
 delimiter $$
-
+--
+-- AGREGA UNA PELICULA A LA TABLA 
+--
+DROP PROCEDURE IF EXISTS agregar_pelicula_sp $$
 CREATE DEFINER=`root`@`localhost` PROCEDURE `agregar_pelicula_sp`(
 			IN v_titulo 		VARCHAR(100),
 			IN v_genero			ENUM('Accion', 'Drama', 'Ciencia Ficcion','Intriga', 'Misterio','Comedia'),
@@ -32,7 +36,12 @@ INSERT INTO peliculas(
 
 END$$
 
+--
+-- MODIFICA UNA PELICULA
+--
 DELIMITER $$
+DROP PROCEDURE IF EXISTS modificar_pelicula_sp $$
+
 CREATE DEFINER=`root`@`localhost` PROCEDURE `modificar_pelicula_sp`(
 			IN v_id_pelicula 	INTEGER(11),
 			IN v_titulo 		VARCHAR(100),
@@ -53,9 +62,11 @@ BEGIN
 
 end $$
 DELIMITER ;
-
+--
+-- ELIMINA UNA PELICULA DE LA TABLA 
+--
 DELIMITER $$
-
+DROP PROCEDURE IF EXISTS eliminar_pelicula_sp $$
 CREATE PROCEDURE eliminar_pelicula_sp(id INT)
 BEGIN
 	DELETE FROM peliculas where id_pelicula = id;
@@ -64,7 +75,7 @@ END $$
 DELIMITER ;
 
 DELIMITER $$
-
+DROP PROCEDURE IF EXISTS dar_pelicula_sp $$
 CREATE PROCEDURE dar_pelicula_sp(id INT)
 BEGIN
 		SELECT * FROM peliculas WHERE id_pelicula = id;
