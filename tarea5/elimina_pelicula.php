@@ -4,7 +4,8 @@
  * @author JairisThomas
  * @copyright 2014
  */
- echo "<h2>Eliminando Película </h2>"; 
+  
+ include("includes/header.php");
  include("includes/dbconn.php");
  $id_pelicula = $_GET['id_pelicula'];
  
@@ -17,9 +18,11 @@
  $duracion      = $row['duracion'];
  $puntuacion    = $row['puntuacion'];
  $disponible = ($row['disponible'] = 1 )? "Si" : "No";
- $clasificacion = $row['clisificacion'];
+ $clasificacion = $row['clasificacion'];
 ?>
+ <h2>Eliminando Película </h2>
  <table class="grid" cellpadding="2" cellspacing="2">
+ 
     <tr style="background-color: black; color: white">
         <th>Cod</th>
         <th>Título</th>
@@ -48,4 +51,5 @@ echo "<tr>";
         echo "<input type=\"hidden\" name=\"id_pelicula\" value=\"$id_pelicula\"/>";
         echo "</form>";
  include("includes/dbdisc.php");
+  include("includes/footer.php");
 ?>
