@@ -22,7 +22,7 @@
         
         $insert = "call agregar_pelicula_sp('$titulo', '$genero', $duracion,$puntuacion,$disponible,'$clasificacion')";
         
-        mysql_query($insert, $empleadosLink);
+        mysql_query($insert, $peliculasLink);
         include("includes/dbdisc.php");
         header("Location: lista_peliculas.php");
     } else {
