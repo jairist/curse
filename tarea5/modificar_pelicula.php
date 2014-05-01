@@ -18,7 +18,7 @@
         
     $update = "call modificar_pelicula_sp($id_pelicula,'$titulo', '$genero', $duracion,$puntuacion,$disponible,'$clasificacion')";
    
-    mysql_query($update, $empleadosLink);
+    mysql_query($update, $peliculasLink);
     include("includes/dbdisc.php");
     header("Location: lista_peliculas.php");
 

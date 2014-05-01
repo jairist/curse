@@ -19,7 +19,7 @@
     $paging->agregarConsulta($sql);
     $paging->ejecutar();
     
-    //$resultSet = mysql_query($sql, $empleadosLink);
+    //$resultSet = mysql_query($sql, $peliculasLink);
     //$numero_registros = mysql_num_rows($resultSet);
     
     

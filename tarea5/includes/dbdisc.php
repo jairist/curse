@@ -1,5 +1,5 @@
 <?php
 
-    mysql_close($empleadosLink); 
+    mysql_close($peliculasLink); 
 
 ?>

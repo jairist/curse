@@ -10,7 +10,7 @@
  $id_pelicula = $_GET['id_pelicula'];
  
  $sql   = "CALL dar_pelicula_sp($id_pelicula)";
- $rs    = mysql_query($sql, $empleadosLink);
+ $rs    = mysql_query($sql, $peliculasLink);
  $row   = mysql_fetch_array($rs);
  
  $titulo        = $row['titulo'];

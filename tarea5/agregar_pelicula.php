@@ -15,7 +15,7 @@
     
     
     $sql = "SELECT 1 FROM peliculas WHERE titulo = '$titulo'";
-    $rs = mysql_query($sql, $empleadosLink);
+    $rs = mysql_query($sql, $peliculasLink);
     $num_rows = mysql_num_rows($rs);
     
     if ($num_rows == 0) {

@@ -7,7 +7,7 @@
         $titulo = $_GET['titulo'];
     } else {
         $sql    = "SELECT titulo, duracion, puntuacion FROM peliculas WHERE id_pelicula = '$id_pelicula'";
-        $rs     = mysql_query($sql, $empleadosLink);
+        $rs     = mysql_query($sql, $peliculasLink);
         $row    = mysql_fetch_array($rs);
         $titulo = $row['titulo'];
         $duracion = $row['duracion'];

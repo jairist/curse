@@ -13,7 +13,7 @@
     
     $update = "CALL eliminar_pelicula_sp($codigo)";
         
-    mysql_query($update, $empleadosLink);
+    mysql_query($update, $peliculasLink);
     
     include("includes/dbdisc.php");
         
