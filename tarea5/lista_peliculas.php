@@ -5,7 +5,7 @@
     $paging = new PHPPaging;
     
     
-    $sql = "SELECT id_pelicula,titulo,genero,duracion,puntuacion,disponible,clisificacion FROM peliculas";
+    $sql = "SELECT id_pelicula,titulo,genero,duracion,puntuacion,disponible,clasificacion FROM peliculas";
     //$sql .= "limint 0,$NUMERO_REG";
    
     
@@ -61,7 +61,7 @@
         $duracion = $row['duracion'];
         $puntuacion = $row['puntuacion'];
         $disponible = ($row['disponible'] = 1 )? "Si" : "No";
-        $clasificacion = $row['clisificacion'];
+        $clasificacion = $row['clasificacion'];
         
         echo "<tr>";
         echo "<td class=\"id_pelicula\">$id_pelicula</td>";
