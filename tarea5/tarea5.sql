@@ -31,7 +31,7 @@ CREATE TABLE `peliculas` (
   `disponible` tinyint(1) DEFAULT NULL,
   `clasificacion` enum('G','PG','PG-13','R','NC-17') DEFAULT NULL,
   PRIMARY KEY (`id_pelicula`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,7 +40,7 @@ CREATE TABLE `peliculas` (
 
 LOCK TABLES `peliculas` WRITE;
 /*!40000 ALTER TABLE `peliculas` DISABLE KEYS */;
-INSERT INTO `peliculas` VALUES (1,'American Hustle','Drama',167,9.79,0,'NC-17'),(2,'American Hustle 2','Drama',167,6.55,0,'NC-17'),(3,'The Wolf of Wall Street','Comedia',179,7.80,0,'NC-17'),(4,'Dallas Buyers Club','Drama',117,8.00,0,'R'),(5,'Dallas Buyers Club','Drama',117,8.00,0,'R'),(6,'American Hustle 3','Drama',167,9.79,0,'NC-17'),(7,'American Hustle 4','Drama',167,6.55,0,'NC-17'),(8,'The Wolf of Wall Street 2','Comedia',179,7.80,0,'NC-17'),(9,'Dallas Buyers Club 2','Drama',117,8.00,0,'R'),(10,'Dallas Buyers Club 2','Drama',117,8.00,0,'R');
+INSERT INTO `peliculas` VALUES (1,'American Hustle','Drama',167,9.79,0,'NC-17'),(2,'American Hustle 2','Drama',167,6.55,0,'NC-17'),(3,'The Wolf of Wall Street','Comedia',179,7.80,0,'NC-17'),(4,'Dallas Buyers Club','Drama',117,8.00,0,'R'),(5,'Dallas Buyers Club','Drama',117,8.00,0,'R'),(6,'American Hustle 3','Drama',167,9.79,0,'NC-17'),(7,'American Hustle 4','Drama',167,6.55,0,'NC-17'),(8,'The Wolf of Wall Street 2','Comedia',179,7.80,0,'NC-17'),(9,'Dallas Buyers Club 2','Drama',117,8.00,0,'R'),(10,'Dallas Buyers Club 2','Drama',117,8.00,0,'R'),(11,'Dallas Buyers Club 22','Drama',117,8.00,0,'R'),(12,'Dallas Buyers Club 23','Drama',117,8.00,0,'R'),(13,'Dallas Buyers Club 55','Drama',117,8.00,0,'R');
 /*!40000 ALTER TABLE `peliculas` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

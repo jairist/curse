@@ -6,7 +6,7 @@
     font-size: 16px;
 }
 .grid tr:hover {
-	background-color:#f2e8da;
+	background-color:#D9D3FC;
  } 
 .grid td.id_pelicula {
     width: 30px;
@@ -43,6 +43,7 @@ p{
 
 
 body {
+    background: #D9D3FC;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -54,18 +55,22 @@ body {
     width: 80%;
     border: solid 1px black;
     text-align: left;
-    background:#dcdcdc;
+    background:#B6B7FD;
 }
 #pagehead{
-    background-color: gray;
+    background-color: #2A2C95;
     padding: 5px;
+    text-align: center;
+    font-family:verdana, arial, helvetica, sans-serif;
+    color:white;
+    
 }
 #main{
     float:left;
     margin: 0 10px;
     padding: 0 10px;
-    border:solid 2px #708090;
-    background:#dcdcdc;
+    border:solid 2px #B6B7FD;
+    background:#D9D3FC;
     margin:15px auto;
     
 }
@@ -80,9 +85,10 @@ body {
 #footer{
     clear: both;
     padding: 5px;
-    background: gray;
+    background: #16047E;
     display: block;
     text-align: center;
+    color: white;
 }
 #tablaConfirmacion{
     border:solid 0px;
