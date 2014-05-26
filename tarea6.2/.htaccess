@@ -1,0 +1,6 @@
+AuthType Basic
+AuthName "Area Retringida"
+AuthUserFile C:/wamp/www/INF-516/curse/tarea6.2/.htpasswd
+AuthGroupFile C:/wamp/www/INF-516/curse/tarea6.2/.htgroup
+Require valid-user
+Require group admin
